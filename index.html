@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu Signo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- MENU  -->
+    <header>
+        <nav class="navbar" aria-label="Menu de navegação principal">
+            <div class="logo-container">
+                <img class="logo" src="./assets/logosigno.png" alt="Logo do site Signos">
+                <h1 class="site-title">Signos do Zodíaco</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre-os-signos" class="scroll-link">Sobre</a></li>
+                <li><a href="#signos-section" class="scroll-link">Signos</a></li> 
+            </ul>
+        </nav>
+    </header>
+ 
+    <main>
+        <!-- SOBRE OS SIGNOS -->
+        <section id="sobre-os-signos">
+            <div class="sobre-container">
+                <h2 class="sobre__titulo"><strong>Sobre</strong> os Signos</h2>
+                <p class="sobre__sub-titulo">Os signos do zodíaco são como "personalidades" atribuídas a cada período do ano, baseadas na posição do Sol em relação às constelações no momento do nascimento de uma pessoa. Na astrologia, acredita-se que essa posição influencia nossa personalidade, características e até mesmo alguns eventos da nossa vida.</p>
+
+                <h2 class="sobre__titulo">Funcionamento</h2>
+                <p class="sobre__sub-titulo">São <strong>12 Signos:</strong> O zodíaco é dividido em 12 partes iguais, cada uma correspondendo a um signo. <br><strong>Datas:</strong> Cada signo tem um período aproximado no calendário, como Áries de 21 de março a 19 de abril.</p>
+                <h3 class="sobre__titulo">Elementos e Modalidades</h3>
+
+                <p class="sobre__sub-titulo">Os signos são divididos em quatro elementos <strong>(Fogo, Terra, Ar e Água)</strong> e três modalidades <strong>(Cardinal, Fixo e Mutável)</strong>. Essa combinação define as características e energias de cada signo.</p>
+            </div> 
+        </section>
+
+        <!-- DESCUBRA SIGNO -->
+        <section class="signos-section" id="signos-section">
+            <h2>Descubra seu Signo</h2>
+            <div class="signos-grid">
+                <div class="signo-card" id="aries">
+                    <img src="./assets/aries.png" alt="Símbolo de Áries">
+                    <h3>Áries</h3>
+                    <p>21 de Março - 19 de Abril</p>
+                    <p>Elemento: Fogo</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('aries-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="touro">
+                    <img src="./assets/touro.png" alt="Símbolo de Touro">
+                    <h3>Touro</h3>
+                    <p>20 de Abril - 20 de Maio</p>
+                    <p>Elemento: Terra</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('touro-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="gemeos">
+                    <img src="./assets/gemeos.png" alt="Símbolo de Gêmeos">
+                    <h3>Gêmeos</h3>
+                    <p>21 de Maio - 20 de Junho</p>
+                    <p>Elemento: Ar </p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('gemeos-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="cancer">
+                    <img src="./assets/cancer.png" alt="Símbolo de Câncer">
+                    <h3>Câncer</h3>
+                    <p>21 de Junho - 22 de Julho</p>
+                    <p>Elemento: Água</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('cancer-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="leao">
+                    <img src="./assets/leao.png" alt="Símbolo de Leão">
+                    <h3>Leão</h3>
+                    <p>23 de Julho - 22 de Agosto</p>
+                    <p>Elemento: Fogo</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('leao-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="virgem">
+                    <img src="./assets/virgem.png" alt="Símbolo de Virgem">
+                    <h3>Virgem</h3>
+                    <p>23 de Agosto - 22 de Setembro</p>
+                    <p>Elemento: Terra</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('virgem-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="libra">
+                    <img src="./assets/libra.png" alt="Símbolo de Libra">
+                    <h3>Libra</h3>
+                    <p>23 de Setembro - 22 de Outubro</p>
+                    <p>Elemento: Ar</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('libra-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="escorpiao">
+                    <img src="./assets/escorpiao.png" alt="Símbolo de Escorpião">
+                    <h3>Escorpião</h3>
+                    <p>23 de Outubro - 21 de Novembro</p>
+                    <p>Elemento: Água</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('escorpiao-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="sagitario">
+                    <img src="./assets/sagitario.png" alt="Símbolo de Sagitário">
+                    <h3>Sagitário</h3>
+                    <p>22 de Novembro - 21 de Dezembro</p>
+                    <p>Elemento: Fogo</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('sargitario-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="capricornio">
+                    <img src="./assets/capricornio.png" alt="Símbolo de Capricórnio">
+                    <h3>Capricórnio</h3>
+                    <p>22 de Dezembro - 20 de Janeiro</p>
+                    <p>Elemento: Terra</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('capricornio-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="aquario">
+                    <img src="./assets/aquario.png" alt="Símbolo de Aquário">
+                    <h3>Aquário</h3>
+                    <p>21 de Janeiro - 18 de Fevereiro</p>
+                    <p>Elemento: Ar</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('aquario-detalhes')">Ver mais</button>
+                </div>
+                <div class="signo-card" id="peixes">
+                    <img src="./assets/peixes.png" alt="Símbolo de Peixes">
+                    <h3>Peixes</h3>
+                    <p>19 de Fevereiro - 20 de Março</p>
+                    <p>Elemento: Água</p>
+                    <button class="btn-detalhes" onclick="mostrarDetalhes('peixes-detalhes')">Ver mais</button>
+                </div>
+            </div>
+        </section> 
+        
+        <!-- Detalhes do signo ocultos inicialmente -->
+        <section id="aries-detalhes" class="signo-detalhes">
+            <h2>Áries</h2>
+            <img src="./assets/aries.png" alt="Símbolo de Áries">
+            <p>Áries é o primeiro signo do zodíaco, regido por Marte, e pertencente ao elemento fogo. Pessoas de Áries são conhecidas por serem corajosas, energéticas e impulsivas. Seu espírito de liderança é uma de suas maiores qualidades.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Fogo</li>
+                <li><strong>Planeta Regente:</strong> Marte</li>
+                <li><strong>Pontos Fortes:</strong> Coragem, determinação, confiança</li>
+                <li><strong>Pontos Fracos:</strong> Impaciência, agressividade</li>
+                <li><strong>Compatibilidade:</strong> Leão, Sagitário</li>
+            </ul>
+        </section>
+
+        <section id="touro-detalhes" class="signo-detalhes">
+            <h2>Touro</h2>
+            <img src="./assets/touro.png" alt="Símbolo de Touro">
+            <p>Touro é o segundo signo do zodíaco, regido por Vênus, e pertencente ao elemento Terra. Pessoas de Touro são conhecidas por serem estáveis, práticas e teimosas. Seu amor pela segurança e beleza é uma de suas maiores qualidades.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Terra</li>
+                <li><strong>Planeta Regente:</strong> Vênus</li>
+                <li><strong>Pontos Fortes:</strong> Confiabilidade, paciência, responsabilidade</li>
+                <li><strong>Pontos Fracos:</strong> Teimosia, possessividade</li>
+                <li><strong>Compatibilidade:</strong> Virgem, Capricórnio</li>
+            </ul>
+        </section>
+
+        <section id="gemeos-detalhes" class="signo-detalhes">
+            <h2>Gêmeos</h2>
+            <img src="./assets/gemeos.png" alt="Símbolo de Gêmeos">
+            <p>Gêmeos é o terceiro signo do zodíaco, regido por Mercúrio, e pertencente ao elemento Ar. Pessoas de Gêmeos são conhecidas por sua curiosidade, comunicação e adaptabilidade. Sua mente ágil e versátil os torna interessantes e versáteis.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Ar</li>
+                <li><strong>Planeta Regente:</strong> Mercúrio</li>
+                <li><strong>Pontos Fortes:</strong> Inteligência, comunicação, versatilidade</li>
+                <li><strong>Pontos Fracos:</strong> Indecisão, superficialidade</li>
+                <li><strong>Compatibilidade:</strong> Libra, Aquário</li>
+            </ul>
+        </section>
+
+        <section id="cancer-detalhes" class="signo-detalhes">
+            <h2>Câncer</h2>
+            <img src="./assets/cancer.png" alt="Símbolo de Câncer">
+            <p>Câncer é o quarto signo do zodíaco, regido pela Lua, e pertencente ao elemento Água. Pessoas de Câncer são conhecidas por sua emotividade, intuição e cuidado. Sua conexão com a família e o lar é muito forte.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Água</li>
+                <li><strong>Planeta Regente:</strong> Lua</li>
+                <li><strong>Pontos Fortes:</strong> Empatia, lealdade, imaginação</li>
+                <li><strong>Pontos Fracos:</strong> Mudanças de humor, apego</li>
+                <li><strong>Compatibilidade:</strong> Escorpião, Peixes</li>
+            </ul>
+        </section>
+
+        <section id="leao-detalhes" class="signo-detalhes">
+            <h2>Leão</h2>
+            <img src="./assets/leao.png" alt="Símbolo de Leão">
+            <p>Leão é o quinto signo do zodíaco, regido pelo Sol, e pertencente ao elemento Fogo. Pessoas de Leão são conhecidas por sua confiança, generosidade e liderança. Seu carisma e paixão os tornam o centro das atenções.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Fogo</li>
+                <li><strong>Planeta Regente:</strong> Sol</li>
+                <li><strong>Pontos Fortes:</strong> Confiança, criatividade, liderança</li>
+                <li><strong>Pontos Fracos:</strong> Orgulho, teimosia</li>
+                <li><strong>Compatibilidade:</strong> Áries, Sagitário</li>
+            </ul>
+        </section>
+
+        <section id="virgem-detalhes" class="signo-detalhes">
+            <h2>Virgem</h2>
+            <img src="./assets/virgem.png" alt="Símbolo de Virgem">
+            <p>Virgem é o sexto signo do zodíaco, regido por Mercúrio, e pertencente ao elemento Terra. Pessoas de Virgem são conhecidas por sua organização, perfeição e praticidade. Sua atenção aos detalhes e seu senso de serviço os tornam confiáveis e eficientes.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Terra</li>
+                <li><strong>Planeta Regente:</strong> Mercúrio</li>
+                <li><strong>Pontos Fortes:</strong> Análise, lealdade, praticidade</li>
+                <li><strong>Pontos Fracos:</strong> Criticismo, perfeccionismo</li>
+                <li><strong>Compatibilidade:</strong> Touro, Capricórnio</li>
+            </ul>
+        </section>
+
+        <section id="libra-detalhes" class="signo-detalhes">
+            <h2>Libra</h2>
+            <img src="./assets/libra.png" alt="Símbolo de Libra">
+            <p>Libra é o sétimo signo do zodíaco, regido por Vênus, e pertencente ao elemento Ar. Pessoas de Libra são conhecidas por sua diplomacia, charme e busca por harmonia. Seu senso de justiça e equilíbrio são marcantes em suas relações.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Ar</li>
+                <li><strong>Planeta Regente:</strong> Vênus</li>
+                <li><strong>Pontos Fortes:</strong> Cooperação, diplomacia, charme</li>
+                <li><strong>Pontos Fracos:</strong> Indecisão, necessidade de aprovação</li>
+                <li><strong>Compatibilidade:</strong> Gêmeos, Aquário</li>
+            </ul>
+        </section>
+
+        <section id="escorpiao-detalhes" class="signo-detalhes">
+            <h2>Escorpião</h2>
+            <img src="./assets/escorpiao.png" alt="Símbolo de Escorpião">
+            <p>Escorpião é o oitavo signo do zodíaco, regido por Plutão, e pertencente ao elemento Água. Pessoas de Escorpião são conhecidas por sua intensidade, paixão e mistério. Sua lealdade e profundidade emocional são marcantes.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Água</li>
+                <li><strong>Planeta Regente:</strong> Plutão</li>
+                <li><strong>Pontos Fortes:</strong> Paixão, lealdade, intuição</li>
+                <li><strong>Pontos Fracos:</strong> Ciúmes, possessivdade</li>
+                <li><strong>Compatibilidade:</strong> Câncer, Peixes</li>
+            </ul>
+        </section>
+
+        <section id="sargitario-detalhes" class="signo-detalhes">
+            <h2>Sagitário</h2>
+            <img src="./assets/sagitario.png" alt="Símbolo de Sagitário">
+            <p>Sagitário é o nono signo do zodíaco, regido por Júpiter, e pertencente ao elemento Fogo. Pessoas de Sagitário são conhecidas por seu otimismo, independência e amor pela aventura. Sua busca por conhecimento e filosofia os torna pessoas inspiradoras.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Fogo</li>
+                <li><strong>Planeta Regente:</strong> Júpiter</li>
+                <li><strong>Pontos Fortes:</strong> Otimismo, independência, honestidade</li>
+                <li><strong>Pontos Fracos:</strong> Impaciência, imprudência</li>
+                <li><strong>Compatibilidade:</strong> Áries, Leão</li>
+            </ul>
+        </section>
+
+        <section id="capricornio-detalhes" class="signo-detalhes">
+            <h2>Capricórnio</h2>
+            <img src="./assets/capricornio.png" alt="Símbolo de Capricórnio">
+            <p>Capricórnio é o décimo signo do zodíaco, regido por Saturno, e pertencente ao elemento Terra. Pessoas de Capricórnio são conhecidas por sua ambição, disciplina e responsabilidade. Sua busca pela segurança e sucesso os torna persistentes e confiáveis.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Terra</li>
+                <li><strong>Planeta Regente:</strong> Saturno</li>
+                <li><strong>Pontos Fortes:</strong> Disciplina, responsabilidade, paciência</li>
+                <li><strong>Pontos Fracos:</strong> Teimosia, pessimismo</li>
+                <li><strong>Compatibilidade:</strong> Touro, Virgem</li>
+            </ul>
+        </section>
+
+        <section id="aquario-detalhes" class="signo-detalhes">
+            <h2>Aquário</h2>
+            <img src="./assets/aquario.png" alt="Símbolo de Aquário">
+            <p>Aquário é o décimo primeiro signo do zodíaco, regido por Urano, e pertencente ao elemento Ar. Pessoas de Aquário são conhecidas por sua originalidade, independência e visão humanitária. Sua mente inovadora e espírito livre os tornam únicos.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Ar</li>
+                <li><strong>Planeta Regente:</strong> Urano</li>
+                <li><strong>Pontos Fortes:</strong> Originalidade, independência, inteligência</li>
+                <li><strong>Pontos Fracos:</strong> Detached, rebelde</li>
+                <li><strong>Compatibilidade:</strong> Gêmeos, Libra</li>
+            </ul>
+        </section>
+
+        <section id="peixes-detalhes" class="signo-detalhes">
+            <h2>Peixes</h2>
+            <img src="./assets/peixes.png" alt="Símbolo de Peixes">
+            <p>Peixes é o décimo segundo e último signo do zodíaco, regido por Netuno, e pertencente ao elemento Água. Pessoas de Peixes são conhecidas por sua intuição, compaixão e criatividade. Sua sensibilidade e conexão com o mundo espiritual são marcantes.</p>
+            <ul>
+                <li><strong>Elemento:</strong> Água</li>
+                <li><strong>Planeta Regente:</strong> Netuno</li>
+                <li><strong>Pontos Fortes:</strong> Intuição, compaixão, criatividade</li>
+                <li><strong>Pontos Fracos:</strong> Escapismo, indecisão</li>
+                <li><strong>Compatibilidade:</strong> Câncer, Escorpião</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    
+    <!-- RODAPÉ -->
+    <footer>  
+        <div class="rodape__links">
+            <img class="rodape__icons" src="./assets/linkedin.png" alt="">
+            <a href="https://linkedin.com/in/adriana-pimenta-0a956a268" class="rodape__link__mensagem">Linkedin</a>
+            <img class="rodape__icons" src="./assets/github.png" alt="Icone do GitHub">
+            <a href="https://github.com/AdrianaGomesPimenta" class="rodape__link__mensagem">GitHub</a>
+        </div>
+        <p class="rodape__nome">© 2024 Adriana Gomes Pimenta</p>
+    </footer>
+</body>
+</html>
